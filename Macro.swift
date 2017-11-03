@@ -63,31 +63,38 @@ func adaptedHeight(height:CGFloat) ->CGFloat {
 //判断是那种设备
 
 /*
- 4  4s
+ iPhone 4  4s
  */
 func iPhone4() ->Bool {
     return UIScreen.main.bounds.size.height == 480.0
 }
 
 /*
- 5  5s
+ iPhone 5  5s
  */
 func iPhone5() ->Bool {
     return UIScreen.main.bounds.size.height == 568.0
 }
 
 /*
- 6  6s  7
+ iPhone 6  6s  7 8
  */
 func iPhone6() ->Bool {
     return UIScreen.main.bounds.size.height == 667.0
 }
 
 /*
- 6plus  6splus  7plus
+ iPhone 6plus  6splus  7plus 8plus
  */
 func iPhone6plus() ->Bool {
     return UIScreen.main.bounds.size.height == 736.0
+}
+
+/*
+ iPhone X
+ */
+func iPhoneX() ->Bool {
+    return UIScreen.main.bounds.size.height == 812.0
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

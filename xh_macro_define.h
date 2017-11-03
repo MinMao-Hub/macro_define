@@ -78,31 +78,38 @@
 
 //判断是那种设备
 /*
- 4  4s
+ iPhone 4  4s
  */
 #ifndef IPHONE4
 #define IPHONE4  ([[UIScreen mainScreen] bounds].size.height==480)
 #endif
 
 /*
- 5  5s
+ iPhone 5  5s
  */
 #ifndef IPHONE5S
 #define IPHONE5S ([[UIScreen mainScreen] bounds].size.height==568)
 #endif
 
 /*
- 6  6s 7
+ iPhone 6  6s 7 8
  */
 #ifndef IPHONE6
 #define IPHONE6  ([[UIScreen mainScreen] bounds].size.height==667)
 #endif
 
 /*
- 6plus  6splus 7plus
+ iPhone 6plus  6splus 7plus 8plus
  */
 #ifndef IPHONE6P
 #define IPHONE6P ([[UIScreen mainScreen] bounds].size.height==736)
+#endif
+
+/*
+ iPhone X
+ */
+#ifndef IPHONEX
+#define IPHONEX ([[UIScreen mainScreen] bounds].size.height==812)
 #endif
 
 // 是否iPad
